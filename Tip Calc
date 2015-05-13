@@ -1,0 +1,13 @@
+meal = raw_input("Meal=")
+tax = raw_input("Tax=")
+tip = raw_input("Desired tip % (do not write %)") 
+
+meal = float(meal)
+tax = float(tax)/100
+tip = float(tip)/100
+meal = meal+meal*tax
+total = meal+meal*tip
+tip_rep = total-meal
+
+print "Tip: " + "%.2f" % tip_rep
+print "Total Bill: " + "%.2f" % total
